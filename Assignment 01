@@ -1,0 +1,15 @@
+PROBLEM 1 
+
+//take speed in km/s as input from user
+PRINT("Enter The value of speed in km/s: ")
+INPUT speedkm
+
+//Convert kilometers per second to meters per second.Multiply the speed by 1000
+speedms = speedkm * 1000
+
+//Convert meters per second to miles per hour.Multiply the speed by 2.237
+speedmiles = speedms * 2.237
+
+PRINT(speedmiles)
+
+PROBLEM 2
