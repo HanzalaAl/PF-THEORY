@@ -13,3 +13,18 @@ speedmiles = speedms * 2.237
 PRINT(speedmiles)
 
 PROBLEM 2
+
+//take a number input from user
+PRINT("Enter A number:")
+INPUT NUM
+
+//check if the number is less than or equals to zero
+   IF NUM <= 0 THEN:
+      PRINT("Invalid input: Number must be positive")
+      INPUT NUM 
+
+// check if the number is divisible by 2 with remainder 0 . if yes than number is even . if no than number is odd
+   ELSE IF NUM MOD 2 = 0 THEN:
+      PRINT("Number is Even")
+   ELSE 
+      PRINT("Number is Odd")
