@@ -28,3 +28,34 @@ INPUT NUM
       PRINT("Number is Even")
    ELSE 
       PRINT("Number is Odd")
+
+PROBLEM#3
+
+// take input of gender , province , age
+PRINT ("Male or Female:")
+PRINT ("Sindh or Punjab:")
+PRINT ("what is the age:")
+INPUT gender , age , province
+
+//check marriage legality according to province
+if province == "Sindh":
+   if age < 18:
+      PRINT ("Marriage is not legal")
+   else:
+      PRINT("Marriage is legal")
+elseif province == "Punjab":
+   //check gender and age for punjab
+   if gender == "Female" AND age < 16:
+      PRINT("Marriage is not legal")
+   else
+      PRINT("Marriage is legal")
+   if gender == "Male" AND age < 18:
+      PRINT("Marriage  is not legal")
+   else:
+      PRINT("Marriage is legal")
+else:
+    PRINT("Enter a valid province Sindh or Punjab:")
+
+
+
+
