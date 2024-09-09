@@ -56,6 +56,46 @@ elseif province == "Punjab":
 else:
     PRINT("Enter a valid province Sindh or Punjab:")
 
+PROBLEM#4
 
+// take input for price of vegetables
+INPUT price_onions 
+INPUT price_grapes 
+INPUT price_tomatoes 
+INPUT price_apricots 
+
+// Get the amount of money Mr. Bhoola has
+PRINT "Enter the amount of money Mr. Bhoola has:"
+INPUT money_available
+
+// Initialize total cost
+total_cost = 0
+
+// Get the quantities of each item Mr. Bhoola buys
+PRINT "Enter the quantity of onions (kg):"
+INPUT onions_qty
+total_cost = total_cost + (price_onions * onions_qty)
+
+PRINT "Enter the quantity of grapes (kg):"
+INPUT grapes_qty
+total_cost = total_cost + (price_grapes * grapes_qty)
+
+PRINT "Enter the quantity of tomatoes (kg):"
+INPUT tomatoes_qty
+total_cost = total_cost + (price_tomatoes * tomatoes_qty)
+
+PRINT "Enter the quantity of apricots (kg):"
+INPUT apricots_qty
+total_cost = total_cost + (price_apricots * apricots_qty)
+
+// Calculate the change Mr. Bhoola gets back
+IF total_cost > money_available THEN
+    PRINT "Mr. Bhoola does not have enough money!"
+    PRINT "Total cost: " + total_cost
+    PRINT "Money available: " + money_available
+ELSE
+    change = money_available - total_cost
+    PRINT "Total cost: " + total_cost
+    PRINT "Change to be returned: " + change
 
 
