@@ -98,4 +98,55 @@ ELSE
     PRINT "Total cost: " + total_cost
     PRINT "Change to be returned: " + change
 
+PROBLEM#5
+
+// Get the crop type (wheat, corn, or rice)
+PRINT "Enter the type of crop (wheat, corn, or rice):"
+INPUT crop_type
+
+// Get the soil moisture level
+PRINT "Enter the soil moisture percentage (%):"
+INPUT soil_moisture
+
+// Get the rainfall status for the last 24 hours (yes or no)
+PRINT "Has it rained in the last 24 hours? (yes/no):"
+INPUT rainfall
+
+// Initialize irrigation status
+irrigation_needed = false
+
+// Check crop type and decide if irrigation is needed
+IF crop_type == "wheat" THEN
+    IF soil_moisture < 30 THEN
+        IF rainfall == "no" THEN
+            irrigation_needed = true
+        ENDIF
+    ENDIF
+
+ELSE IF crop_type == "corn" THEN
+    IF soil_moisture < 40 THEN
+        irrigation_needed = true
+    ENDIF
+
+ELSE IF crop_type == "rice" THEN
+    IF soil_moisture < 25 THEN I
+        IF rainfall == "no" THEN
+            irrigation_needed = true
+        ENDIF
+    ENDIF
+
+ELSE
+    PRINT "Invalid crop type."
+ENDIF
+
+// Output the irrigation decision
+IF irrigation_needed == true THEN
+    PRINT "Irrigation will be initiated."
+ELSE
+    PRINT "No irrigation is needed."
+ENDIF
+
+END
+
+
 
