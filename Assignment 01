@@ -179,6 +179,27 @@ ELSE
         PRINT "Invalid ride selection."
 ENDIF
 
+PROBLEM#8
 
+// Input A single number
+INPUT number
+
+// Initialize sum to 0
+sum = 0
+
+// If the number is negative, temporarily make it positive for digit extraction
+IF number < 0 THEN
+    number = -number
+ENDIF
+
+// Loop to find each digit and add it to the sum
+    WHILE number > 0 DO
+        digit = number % 10      // Get the last digit of the number
+        sum = sum + digit        // Add the digit to the sum
+        number = number // 10    // Remove the last digit from the number
+    ENDWHILE
+
+// Output the sum of digits
+    PRINT sum
 
 
