@@ -146,7 +146,39 @@ ELSE
     PRINT "No irrigation is needed."
 ENDIF
 
-END
+PROBLEM#6
+
+// Input: Visitor's height, age, and selected ride
+INPUT height
+INPUT age
+INPUT ride
+
+// Check selected ride
+IF ride == "Dragon Roller Coaster" THEN
+   IF height >= 48 AND age >= 10 THEN
+        PRINT "Visitor can go on the Dragon Roller Coaster."
+   ELSE
+        PRINT "Visitor does not meet the requirements for the Dragon Roller Coaster."
+   ENDIF
+
+ELSE IF ride == "Sky Swing" THEN
+      IF height >= 54 THEN
+            PRINT "Visitor can go on the Sky Swing."
+      ELSE
+            PRINT "Visitor does not meet the height requirement for the Sky Swing."
+      ENDIF
+
+ELSE IF ride == "Carousel" THEN
+      IF age >= 5 THEN
+            PRINT "Visitor can go on the Carousel."
+      ELSE
+            PRINT "Visitor does not meet the age requirement for the Carousel."
+      ENDIF
+
+ELSE
+        PRINT "Invalid ride selection."
+ENDIF
+
 
 
 
