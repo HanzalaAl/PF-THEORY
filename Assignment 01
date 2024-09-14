@@ -241,5 +241,35 @@ ELSE
    PRINT "The numbers are not coprime."
 END IF
 
+PROBLEM#12
 
+//Initialize the jugs
+5L_jug = 0  // Current amount of water in the 5L jug
+3L_jug = 0  // Current amount of water in the 3L jug
+
+//Fill the 5L jug to the top
+5L_jug = 5
+
+//Pour water from the 5L jug into the 3L jug until the 3L jug is full
+3L_jug = 5L_jug
+
+//After the pour, the 3L jug is now full, and the 5L jug has 2 liters left (5 - 3 = 2)
+//Empty the 3L jug
+3L_jug = 0
+
+//Pour the remaining water from the 5L jug into the 3L jug
+3L_jug = 2  // Now the 3L jug has 2 liters
+
+//Fill the 5L jug to the top again
+5L_jug = 5
+
+//Pour water from the 5L jug into the 3L jug until the 3L jug is full
+WHILE 3L_jug < 3 DO
+   3L_jug = 5L_jug
+END WHILE
+
+//Now, the 3L jug is full (3 liters), and the 5L jug will have 4 liters left (5 - 1 = 4)
+
+//The required amount is now measured
+   PRINT "Measured 4 liters in the 5L jug"
 
