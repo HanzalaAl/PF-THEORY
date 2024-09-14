@@ -202,4 +202,24 @@ ENDIF
 // Output the sum of digits
     PRINT sum
 
+PROBLEM#11
+
+//Input two whole numbers
+INPUT num1, num2
+
+//calculate GCD
+WHILE num2 ≠ 0 DO
+   temp = num2
+   num2 = num1 % num2 
+   num1 = temp
+END WHILE
+
+//Check if the numbers are coprime
+IF num1 == 1 THEN
+   PRINT "The numbers are coprime."
+ELSE
+   PRINT "The numbers are not coprime."
+END IF
+
+
 
