@@ -189,7 +189,7 @@ sum = 0
 
 // If the number is negative, temporarily make it positive for digit extraction
 IF number < 0 THEN
-    number = -number
+    number = -1 * number
 ENDIF
 
 // Loop to find each digit and add it to the sum
