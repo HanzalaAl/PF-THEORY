@@ -216,7 +216,7 @@ While num > 0 do
         Digit = num % 10  //Get the last digit
         num = num / 10     //Remove the last digit
 
-    result = result + (Digit * 10^count)  //Multiply by the power of 10 depending on the position
+    result = result + (Digit * pow(10,count))  //Multiply by the power of 10 depending on the position
     count = count + 1
 
 Print result
