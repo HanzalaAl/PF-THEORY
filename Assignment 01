@@ -245,8 +245,8 @@ PROBLEM#9
 //Description: this code calculate exact days months and years since birth till current date
 
 //Get input for date of birth (DOB) and today's date
-INPUT: birthYear, birthMonth, birthDay
-INPUT: currentYear, currentMonth, currentDay
+INPUT birthYear, birthMonth, birthDay
+INPUT currentYear, currentMonth, currentDay
 
 //Validate the dates
 // Check if the month is valid (1 to 12)
