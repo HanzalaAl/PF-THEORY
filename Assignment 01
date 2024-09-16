@@ -224,6 +224,66 @@ ENDIF
 // Output the sum of digits
     PRINT sum
 
+PROBLEM#9
+
+//Get input for date of birth (DOB) and today's date
+INPUT: birthYear, birthMonth, birthDay
+INPUT: currentYear, currentMonth, currentDay
+
+//Validate the dates
+// Check if the month is valid (1 to 12)
+IF birthMonth < 1 OR birthMonth > 12 OR currentMonth < 1 OR currentMonth > 12 THEN
+   PRINT "Invalid month entered"
+END IF
+
+// Check if the day is valid for the month (taking leap year into account for February)
+    IF birthMonth == 2 THEN
+        IF (birthYear % 4 == 0 AND birthYear % 100 != 0) OR (birthYear % 400 == 0) THEN
+            maxDays = 29  // Leap year
+        ELSE
+            maxDays = 28  // Non-leap year
+        END IF
+    ELSE IF birthMonth == 4 OR birthMonth == 6 OR birthMonth == 9 OR birthMonth == 11 THEN
+        maxDays = 30  // April, June, September, November have 30 days
+    ELSE
+        maxDays = 31  // January, March, May, July, August, October, December have 31 days
+    END IF
+
+    IF birthDay < 1 OR birthDay > maxDays THEN
+        PRINT "Invalid day entered"
+        EXIT
+    END IF
+
+//Calculate the age in years, months, and days
+    ageYears = currentYear - birthYear
+    ageMonths = currentMonth - birthMonth
+    ageDays = currentDay - birthDay
+
+//Adjust if current month or day is less than birth month or day
+    IF ageDays < 0 THEN
+        ageMonths = ageMonths - 1
+        // Adjust for the previous month's days
+        IF currentMonth == 1 OR currentMonth == 3 OR currentMonth == 5 OR currentMonth == 7 OR currentMonth == 8 OR currentMonth == 10 OR currentMonth == 12 THEN
+            ageDays = ageDays + 31
+        ELSE IF currentMonth == 4 OR currentMonth == 6 OR currentMonth == 9 OR currentMonth == 11 THEN
+            ageDays = ageDays + 30
+        ELSE IF currentMonth == 2 THEN
+            IF (currentYear % 4 == 0 AND currentYear % 100 != 0) OR (currentYear % 400 == 0) THEN
+                ageDays = ageDays + 29  // Leap year
+            ELSE
+                ageDays = ageDays + 28  // Non-leap year
+            END IF
+        END IF
+    END IF
+
+    IF ageMonths < 0 THEN
+        ageYears = ageYears - 1
+        ageMonths = ageMonths + 12
+    END IF
+
+//Print the final age
+    PRINT "Exact Age: ", ageYears, " years, ", ageMonths, " months, ", ageDays, " days"
+
 PROBLEM#10
 
 Input num
