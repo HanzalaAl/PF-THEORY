@@ -386,34 +386,34 @@ END IF
 // 1. Fill the larger jug and pour into the smaller until the target is achieved
 // 2. Fill the smaller jug and pour into the larger until the target is achieved
     
-    // Initialize jugs
-    jug1 = 0  // Start with jug1 empty
-    jug2 = 0  // Start with jug2 empty
+// Initialize jugs
+jug1 = 0  // Start with jug1 empty
+jug2 = 0  // Start with jug2 empty
     
-    PRINT "Start: Jug1 = 0 liters, Jug2 = 0 liters"
+PRINT "Start: Jug1 = 0 liters, Jug2 = 0 liters"
     
-    // Step 5: Repeat the process until one of the jugs contains exactly K liters
-    WHILE jug1 != K AND jug2 != K DO
-        IF jug1 == 0 THEN
-            // Fill jug1 from the water source
-            jug1 = M
-            PRINT "Fill jug1: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
+//Repeat the process until one of the jugs contains exactly K liters
+WHILE jug1 != K AND jug2 != K DO
+   IF jug1 == 0 THEN
+      // Fill jug1 from the water source
+      jug1 = M
+    PRINT "Fill jug1: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
         
-        ELSE IF jug2 == N THEN
-            // Empty jug2 into the water source
-            jug2 = 0
-            PRINT "Empty jug2: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
+ELSE IF jug2 == N THEN
+      // Empty jug2 into the water source
+      jug2 = 0
+    PRINT "Empty jug2: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
         
-        ELSE
-            // Pour water from jug1 into jug2 until jug1 is empty or jug2 is full
-            pourAmount = MIN(jug1, N - jug2)
-            jug1 = jug1 - pourAmount
-            jug2 = jug2 + pourAmount
-            PRINT "Pour jug1 into jug2: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
-        END IF
-    END WHILE
+ELSE
+// Pour water from jug1 into jug2 until jug1 is empty or jug2 is full
+   pourAmount = MIN(jug1, N - jug2)
+   jug1 = jug1 - pourAmount
+   jug2 = jug2 + pourAmount
+   PRINT "Pour jug1 into jug2: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
+END IF
+END WHILE
     
-    // Step 6: Output result
-    PRINT "Success! Measured exactly ", K, " liters."
+//Output result
+PRINT "Success! Measured exactly ", K, " liters."
 
     
