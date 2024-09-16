@@ -1,4 +1,6 @@
 PROBLEM 1 
+//Syed Hanzala Ali 24K-0025
+//Description: this code converts speed from kilometers to miles
 
 //take speed in km/s as input from user
 PRINT("Enter The value of speed in km/s: ")
@@ -12,7 +14,9 @@ speedmiles = speedms * 2.237
 
 PRINT(speedmiles)
 
-PROBLEM 2
+PROBLEM#2
+//Syed Hanzala Ali 24K-0025
+//Description: this code tells if a number is even or odd
 
 //take a number input from user
 PRINT("Enter A number:")
@@ -30,6 +34,8 @@ INPUT NUM
       PRINT("Number is Odd")
 
 PROBLEM#3
+//Syed Hanzala Ali 24K-0025
+//Description: this code tells whether a person is eligible to marry legally in Sindh or Punjab.
 
 // take input of gender , province , age
 PRINT ("Male or Female:")
@@ -57,6 +63,8 @@ else:
     PRINT("Enter a valid province Sindh or Punjab:")
 
 PROBLEM#4
+//Syed Hanzala Ali 24K-0025
+//Description: this code calculates the total price of fruits and vegetables bought by Mr.Bhoola
 
 // take input for price of vegetables
 INPUT price_onions 
@@ -99,6 +107,8 @@ ELSE
     PRINT "Change to be returned: " + change
 
 PROBLEM#5
+//Syed Hanzala Ali 24K-0025
+//Description: this code tells whether a crop needs irrigation or not
 
 // Get the crop type (wheat, corn, or rice)
 PRINT "Enter the type of crop (wheat, corn, or rice):"
@@ -147,6 +157,8 @@ ELSE
 ENDIF
 
 PROBLEM#6
+//Syed Hanzala Ali 24K-0025
+//Description: this code tells if a person is eligible for a particular ride at an Amusement Park
 
 // Input: Visitor's height, age, and selected ride
 INPUT height
@@ -180,6 +192,8 @@ ELSE
 ENDIF
 
 PROBLEM#7
+//Syed Hanzala Ali 24K-0025
+//Description: this code tells the floor number on which the lift is currently on.
 
 // Initialize variables
 floorNumber = 0  // Stores the calculated floor number
@@ -202,6 +216,8 @@ for i = 1 to 7:
 PRINT floorNumber
 
 PROBLEM#8
+//Syed Hanzala Ali 24K-0025
+//Description: this code calculates the sum of all the digits in a number
 
 // Input A single number
 INPUT number
@@ -225,6 +241,8 @@ ENDIF
     PRINT sum
 
 PROBLEM#9
+//Syed Hanzala Ali 24K-0025
+//Description: this code calculate exact days months and years since birth till current date
 
 //Get input for date of birth (DOB) and today's date
 INPUT: birthYear, birthMonth, birthDay
@@ -284,6 +302,8 @@ END IF
     PRINT "Exact Age: ", ageYears, " years, ", ageMonths, " months, ", ageDays, " days"
 
 PROBLEM#10
+//Syed Hanzala Ali 24K-0025
+//Description: this code is to fix Mr Bhoola's keyboard and remove the additional zero which was added due to fault
 
 Input num
 result = 0
@@ -304,6 +324,8 @@ Print result
 
 
 PROBLEM#11
+//Syed Hanzala Ali 24K-0025
+//Description: this code tells whether two numbers are coprime or not
 
 //Input two whole numbers
 INPUT num1, num2
@@ -323,6 +345,8 @@ ELSE
 END IF
 
 PROBLEM#12
+//Syed Hanzala Ali 24K-0025
+//Description: this code solves the die hart jug problem
 
 //Initialize the jugs
 5L_jug = 0  // Current amount of water in the 5L jug
@@ -355,6 +379,8 @@ END WHILE
    PRINT "Measured 4 liters in the 5L jug"
 
 PROBLEM#13
+//Syed Hanzala Ali 24K-0025
+//Description: this is a generalized code for die hart jug problem
 
 //Input capacities of two jugs and the target amount of water
 INPUT: M (capacity of jug 1), N (capacity of jug 2), K (target amount)
