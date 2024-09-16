@@ -287,10 +287,10 @@ END IF
         ELSE IF currentMonth == 2 THEN
             IF (currentYear % 4 == 0 AND currentYear % 100 != 0) OR (currentYear % 400 == 0) THEN
                 ageDays = ageDays + 29  // Leap year
-            ELSE
-                ageDays = ageDays + 28  // Non-leap year
+        ELSE
+         ageDays = ageDays + 28  // Non-leap year
             END IF
-        END IF
+      END IF
     END IF
 
     IF ageMonths < 0 THEN
@@ -420,7 +420,7 @@ PRINT "Start: Jug1 = 0 liters, Jug2 = 0 liters"
     
 //Repeat the process until one of the jugs contains exactly K liters
 WHILE jug1 != K AND jug2 != K DO
-   IF jug1 == 0 THEN
+IF jug1 == 0 THEN
       // Fill jug1 from the water source
       jug1 = M
     PRINT "Fill jug1: Jug1 =", jug1, " liters, Jug2 =", jug2, " liters"
