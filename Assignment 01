@@ -179,6 +179,28 @@ ELSE
         PRINT "Invalid ride selection."
 ENDIF
 
+PROBLEM#7
+
+// Initialize variables
+floorNumber = 0  // Stores the calculated floor number
+INPUT binaryNumber
+digit = binaryNumber  // Stores the current digit being processed
+
+// Iterate through each digit of the 7-digit binary number
+for i = 1 to 7:
+  // Extract the value of the current digit (1 or 0)
+  digitValue = (digit % 10) / 2
+
+  // If the current digit is 1, add its corresponding value to the floor number
+  if digitValue == 1:
+    floorNumber = floorNumber + 2^(i-1)  // Calculate the value based on the digit's position
+
+  // Move to the next digit
+  digit = digit / 10
+
+// Print the calculated floor number
+PRINT floorNumber
+
 PROBLEM#8
 
 // Input A single number
