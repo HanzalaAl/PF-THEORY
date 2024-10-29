@@ -1,0 +1,13 @@
+Name : Syed Hanzala Ali
+Roll No : 24K-0025
+
+During my journey of Assignment 02,
+I encountered several challenges, including syntax errors, 
+logical flaws, and difficulty in debugging complex functions. 
+To address these problems, I adopted a systematic approach: 
+first, I carefully reviewed the code line by line to identify errors, 
+utilized print statements to trace variable values, 
+and consulted online resources and documentation for guidance. 
+Through persistent troubleshooting and testing, I was able to refine my solutions. 
+This experience taught me the importance of patience and resilience in programming, 
+as well as the value of seeking help and utilizing debugging tools effectively.
